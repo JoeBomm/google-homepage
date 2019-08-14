@@ -1,6 +1,108 @@
-body {
-    font-family: Arial, sans-serif;
-}
-a:visited{
+body header, body footer {
+    font-family: arial, sans-serif;
     text-decoration: none;
+    font-size: 13px;
+}
+.layout {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 65px auto 40px;
+    grid-template-columns: 100%;
+}
+
+.header {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 130px auto 270px;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.left-head{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;    
+}
+
+.right-head{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.main {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin: auto;
+}
+
+.footer {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 320px auto 220px;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: rgb(242, 242, 242);
+    border-top-color: rgb(228, 228, 228);
+    border-top-width: 1px;
+}
+
+.left-foot{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.right-foot{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.searchbar {
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+.searchbar img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    width: 272px;
+}
+
+form input{
+    width: 500px;
+    height: 35px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #d9d9d9;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 18px;
+}
+form input:hover{
+    border-width: 3px;
+    border-color: radial-gradient(#d9d9d9 white);
+
+}
+.searchbar button{
+    margin: 20px 10px;
+    padding: 5px 5px;
 }
