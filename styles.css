@@ -101,6 +101,10 @@ form input:hover{
     border-color: #fff;
 }
 
+form input:focus{
+    outline: none;
+}
+
 .buttons{
     display: block;
     width: 285px;
